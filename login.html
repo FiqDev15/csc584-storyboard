@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DemocraTech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Login Container */
+        .login-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            margin-top: 4rem;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-header h2 {
+            color: #003366;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-header p {
+            color: #6c757d;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #003366;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #003366;
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        /* Login Button */
+        .login-btn {
+            width: 100%;
+            background-color: #FFB200;
+            color: #003366;
+            padding: 0.875rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+        }
+
+        .login-btn:hover {
+            background-color: #e6a000;
+        }
+
+        /* Register Link */
+        .register-link {
+            text-align: center;
+            color: #6c757d;
+        }
+
+        .register-link a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Error Message (for future use) */
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #dc3545;
+            display: none;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.875rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>DemocraTech - Student Election System</h1>
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Student Login</h2>
+            <p>Access your voting dashboard</p>
+        </div>
+
+        <!-- Error Message (hidden by default) -->
+        <div class="error-message">
+            Invalid credentials. Please try again.
+        </div>
+
+        <!-- Login Form -->
+        <form>
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" class="form-control" placeholder="Enter your student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>© 2024 DemocraTech | Student Election System</p>
+        </div>
+    </div>
+</body>
+</html>
