@@ -279,34 +279,31 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
         <h1>DemocraTech - Vote History</h1>
         <div class="user-info">
             <span>Student: [Student Name]</span>
-            <a href="login.html" class="logout-btn">Logout</a>
+            <a href="index.html" class="logout-btn">Logout</a>
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="nav">
         <ul>
             <li><a href="student-dashboard.html">Dashboard</a></li>
             <li><a href="view-elections.html">Elections</a></li>
+            <li><a href="voting-page.html">Vote</a></li>
             <li><a href="vote-history.html" class="active">Vote History</a></li>
+            <li><a href="election-results-student.html">Result Election</a></li>
+            <li><a href="apply-candidate.html">Apply As Candidates</a></li>
             <li><a href="profile.html">Profile</a></li>
-            <li><a href="help.html">Help</a></li>
         </ul>
     </nav>
 
-    <!-- Main Container -->
     <div class="container">
-        <!-- Page Header -->
         <div class="page-header">
             <h1>Your Voting History</h1>
         </div>
 
-        <!-- Stats Summary -->
         <div class="stats-summary">
             <div class="summary-card">
                 <h3>Total Votes Cast</h3>
@@ -322,7 +319,6 @@
             </div>
         </div>
 
-        <!-- Filter Controls -->
         <div class="filter-controls">
             <div class="filter-row">
                 <div class="filter-group">
@@ -349,44 +345,15 @@
                     <select id="facultyFilter" class="filter-select">
                         <option value="">All Faculties</option>
                         <option value="computing">Faculty of Computer and Mathematical Sciences</option>
-                        <option value="accountancy">Faculty of Accountancy</option>
-                        <option value="administrative">Faculty of Administrative Science and Policy Studies</option>
-                        <option value="applied-sciences">Faculty of Applied Sciences</option>
-                        <option value="architecture">Faculty of Architecture, Planning and Surveying</option>
-                        <option value="art-design">Faculty of Art and Design</option>
-                        <option value="business-management">Faculty of Business and Management</option>
-                        <option value="chemical-engineering">Faculty of Chemical Engineering</option>
                         <option value="civil-engineering">Faculty of Civil Engineering</option>
-                        <option value="communication-media">Faculty of Communication and Media Studies</option>
-                        <option value="computer-science">Faculty of Computer Science and Mathematics</option>
-                        <option value="dental">Faculty of Dentistry</option>
-                        <option value="education">Faculty of Education</option>
-                        <option value="electrical-engineering">Faculty of Electrical Engineering</option>
-                        <option value="film-theatre-animation">Faculty of Film, Theatre and Animation</option>
-                        <option value="health-sciences">Faculty of Health Sciences</option>
-                        <option value="hotel-tourism">Faculty of Hotel and Tourism Management</option>
-                        <option value="information-management">Faculty of Information Management</option>
-                        <option value="law">Faculty of Law</option>
-                        <option value="mechanical-engineering">Faculty of Mechanical Engineering</option>
-                        <option value="medicine">Faculty of Medicine</option>
-                        <option value="music-performing-arts">Faculty of Music and Performing Arts</option>
-                        <option value="pharmacy">Faculty of Pharmacy</option>
-                        <option value="plantation-agrotechnology">Faculty of Plantation and Agrotechnology</option>
+                        <option value="business-management">Faculty of Business and Management</option>
                         <option value="sports-science">Faculty of Sports Science and Recreation</option>
-                        <option value="information-science-technology">Faculty of Information Science and Technology</option>
-                        <option value="shariah-law">Faculty of Shariah and Law</option>
-                        <option value="islamic-contemporary">Faculty of Islamic Contemporary Studies</option>
-                        <option value="language-studies">Faculty of Languages and Linguistics</option>
-                        <option value="mechanical-manufacturing">Faculty of Mechanical and Manufacturing Engineering</option>
-                        <option value="electrical-electronic">Faculty of Electrical and Electronic Engineering</option>
-                        <option value="chemical-energy">Faculty of Chemical and Energy Engineering</option>
-                        <option value="civil-environmental">Faculty of Civil and Environmental Engineering</option>
+                        <option value="law">Faculty of Law</option>
                     </select>
                 </div>
             </div>
         </div>
 
-        <!-- History Table -->
         <div class="history-table-container">
             <div class="table-responsive">
                 <table class="history-table">
@@ -401,7 +368,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Empty State -->
                         <tr>
                             <td colspan="6" class="empty-state">
                                 <div class="empty-state-icon">📝</div>
@@ -413,7 +379,6 @@
                 </table>
             </div>
 
-            <!-- Pagination -->
             <div class="pagination">
                 <button class="pagination-btn" disabled>Previous</button>
                 <button class="pagination-btn active">1</button>

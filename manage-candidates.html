@@ -102,7 +102,6 @@
             color: #6c757d;
         }
 
-        /* Tabs */
         .tabs {
             display: flex;
             gap: 0.5rem;
@@ -139,7 +138,6 @@
             margin-left: 0.5rem;
         }
 
-        /* Filters */
         .filters {
             background: white;
             padding: 1.5rem;
@@ -170,7 +168,6 @@
             border-radius: 4px;
         }
 
-        /* Candidate Cards */
         .candidates-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -319,7 +316,6 @@
             background-color: #e6a000;
         }
 
-        /* Empty State */
         .empty-state {
             text-align: center;
             padding: 3rem;
@@ -331,7 +327,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Modal for rejection reason */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -402,7 +397,7 @@
         <h1>DemocraTech - Admin Panel</h1>
         <div class="user-info">
             <span>Admin: [Admin Name]</span>
-            <a href="login.html" class="logout-btn">Logout</a>
+            <a href="index.html" class="logout-btn">Logout</a>
         </div>
     </div>
 
@@ -422,14 +417,13 @@
             <p>Review and approve candidate applications for elections</p>
         </div>
 
-        <!-- Tabs -->
+
         <div class="tabs">
             <button class="tab active">Pending Approval <span class="count">0</span></button>
             <button class="tab">Approved <span class="count">0</span></button>
             <button class="tab">Rejected <span class="count">0</span></button>
         </div>
 
-        <!-- Filters -->
         <div class="filters">
             <div class="filter-group">
                 <label>Election</label>
@@ -459,13 +453,11 @@
             </div>
         </div>
 
-        <!-- Candidates Grid - Pending -->
         <div class="empty-state">
             <h3>No Candidates Found</h3>
             <p>There are no candidates pending approval at this time.</p>
         </div>
 
-        <!-- Rejection Modal (hidden by default) -->
         <div class="modal-overlay">
             <div class="modal">
                 <h3>Reject Candidate</h3>

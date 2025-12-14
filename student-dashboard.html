@@ -18,7 +18,6 @@
             line-height: 1.6;
         }
 
-        /* Header */
         .header {
             background-color: #003366;
             color: white;
@@ -56,7 +55,6 @@
             background-color: #e6a000;
         }
 
-        /* Navigation */
         .nav {
             background-color: #f8f9fa;
             padding: 0;
@@ -84,14 +82,12 @@
             border-bottom-color: #FFB200;
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 2rem;
         }
 
-        /* Welcome Banner */
         .welcome-banner {
             background: linear-gradient(135deg, #003366 0%, #004080 100%);
             color: white;
@@ -109,7 +105,6 @@
             opacity: 0.9;
         }
 
-        /* Stats Cards */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -161,7 +156,6 @@
             border-left: 4px solid #17a2b8;
         }
 
-        /* Elections Section */
         .elections-section {
             background: white;
             padding: 1.5rem;
@@ -192,7 +186,6 @@
             text-decoration: underline;
         }
 
-        /* Elections Grid */
         .elections-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -293,7 +286,6 @@
             background-color: #6c757d;
         }
 
-        /* Recent Activity */
         .recent-activity {
             background: white;
             padding: 1.5rem;
@@ -323,35 +315,32 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
         <h1>DemocraTech - Student Dashboard</h1>
         <div class="user-info">
             <span>Student: [Student Name]</span>
-            <a href="login.html" class="logout-btn">Logout</a>
+            <a href="index.html" class="logout-btn">Logout</a>
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="nav">
         <ul>
             <li><a href="student-dashboard.html" class="active">Dashboard</a></li>
             <li><a href="view-elections.html">Elections</a></li>
+            <li><a href="voting-page.html">Vote</a></li>
             <li><a href="vote-history.html">Vote History</a></li>
+            <li><a href="election-results-student.html">Result Election</a></li>
+            <li><a href="apply-candidate.html">Apply As Candidates</a></li>
             <li><a href="profile.html">Profile</a></li>
-            <li><a href="help.html">Help</a></li>
         </ul>
     </nav>
 
-    <!-- Main Container -->
     <div class="container">
-        <!-- Welcome Banner -->
         <div class="welcome-banner">
             <h2>Welcome back, [Student Name]!</h2>
             <p>Participate in ongoing elections and make your voice heard</p>
         </div>
 
-        <!-- Stats Cards -->
         <div class="stats-grid">
             <div class="stat-card primary">
                 <h3>Active Elections</h3>
@@ -378,7 +367,6 @@
             </div>
         </div>
 
-        <!-- Active Elections Section -->
         <div class="elections-section">
             <div class="section-header">
                 <h2>Active Elections - Vote Now!</h2>
@@ -386,7 +374,6 @@
             </div>
 
             <div class="elections-grid">
-                <!-- Empty State for Elections -->
                 <div class="empty-state-card" style="text-align: center; padding: 3rem; grid-column: 1 / -1;">
                     <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
                     <h3 style="color: #003366; margin-bottom: 0.5rem;">No Active Elections</h3>
@@ -395,7 +382,6 @@
             </div>
         </div>
 
-        <!-- Recent Activity -->
         <div class="recent-activity">
             <h2>Recent Activity</h2>
             <div class="empty-state-activity" style="text-align: center; padding: 2rem;">

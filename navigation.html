@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation - DemocraTech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #FFB200;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #FFB200;
+            color: #003366;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffc933;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 178, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #003366;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .links-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .links-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #FFB200;
+        }
+
+        .page-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .page-link {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .page-link:hover {
+            background-color: rgba(255, 178, 0, 0.2);
+            border-color: #FFB200;
+            transform: translateY(-3px);
+        }
+
+        .page-link strong {
+            display: block;
+            color: #FFB200;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .page-link span {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 50px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🗳️ DemocraTech</div>
+        <h1>Student Election Management System</h1>
+        <p class="tagline">Secure, Transparent, and Democratic Voting Platform</p>
+
+        <div class="btn-group">
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="register.html" class="btn btn-secondary">Register</a>
+        </div>
+
+        <div class="links-section">
+            <h2>📂 Project Pages - For Group Members</h2>
+            <div class="page-links">
+                <!-- Admin Pages -->
+                <a href="admin-dashboard.html" class="page-link">
+                    <strong>Admin Dashboard</strong>
+                    <span>Main admin panel</span>
+                </a>
+                <a href="manage-elections.html" class="page-link">
+                    <strong>Manage Elections</strong>
+                    <span>CRUD elections</span>
+                </a>
+                <a href="manage-users.html" class="page-link">
+                    <strong>Manage Users</strong>
+                    <span>User management</span>
+                </a>
+                <a href="manage-candidates.html" class="page-link">
+                    <strong>Manage Candidates</strong>
+                    <span>Approve/reject candidates</span>
+                </a>
+                <a href="election-results.html" class="page-link">
+                    <strong>Election Results</strong>
+                    <span>View results & charts</span>
+                </a>
+                
+                <!-- Student Pages -->
+                <a href="student-dashboard.html" class="page-link">
+                    <strong>Student Dashboard</strong>
+                    <span>Student main page</span>
+                </a>
+                <a href="view-elections.html" class="page-link">
+                    <strong>View Elections</strong>
+                    <span>Browse elections</span>
+                </a>
+                <a href="vote-history.html" class="page-link">
+                    <strong>Vote History</strong>
+                    <span>My voting records</span>
+                </a>
+                <a href="profile.html" class="page-link">
+                    <strong>Profile</strong>
+                    <span>Edit profile & settings</span>
+                </a>
+                
+                <!-- General Pages -->
+                <a href="login.html" class="page-link">
+                    <strong>Login</strong>
+                    <span>User authentication</span>
+                </a>
+                <a href="register.html" class="page-link">
+                    <strong>Register</strong>
+                    <span>New user signup</span>
+                </a>
+                <a href="help.html" class="page-link">
+                    <strong>Help</strong>
+                    <span>FAQ & Support</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 DemocraTech | UiTM Student Election System</p>
+        </div>
+    </div>
+</body>
+</html>
